@@ -9,6 +9,7 @@ local uis = game:GetService("UserInputService")
 
 local w = rayfield:CreateWindow({
     Name = "vetrex Hub v1 beta",
+    ShowText = 'vetrex hub :-)',
     LoadingTitle = "vetrex Hub v1 beta",
     LoadingSubtitle = "by vetrex",
     ConfigurationSaving = {
