@@ -20,7 +20,7 @@ local w = rayfield:CreateWindow({
     KeySettings = {
         Title = "vetrex Hub v1 beta",
         Subtitle = "Ключ система",
-        Note = "The key can be obtained from this link - https://discord.gg/xSkFSKmAgp",
+        Note = "key in discord - https://discord.gg/xSkFSKmAgp",
         FileName = "Key",
         SaveKey = true,
         Key = {"vetrex"},
@@ -36,7 +36,7 @@ local p = w:CreateTab("Protection", 4483362458)
 local v = w:CreateTab("Visual", 4483362458)
 
 MainTab:CreateParagraph({
-    Title = "Bdev Hub v2.0.0",
+    Title = "vetrex hub v1 beta",
     Content = "Добро пожаловать в vetrex Hub!\n\nРазработчик: vetrex \nВерсия: v1 beta\n\nЧто нового:\n• Оптимизирован код для лучшей производительности\n\nДобавлено:\n• Плавность наводки\n• Свечение\n• Индикатор видимости\n• Счетчик врагов\n• Рентген\n• Показать FPS\n• ТП ходьба\n• Буст FPS\n• Растяг 4:3\n• Смена FOV\n• Радужный персонаж\n• Яркость\n• Отключить туман\n\nУлучшено:\n• Полоска здоровья - теперь под полоской видно кол-во здоровья игрока"
 })
 
