@@ -8,22 +8,22 @@ local tele = game:GetService("TeleportService")
 local uis = game:GetService("UserInputService")
 
 local w = rayfield:CreateWindow({
-    Name = "Bdev Hub v2.0.0",
-    LoadingTitle = "Bdev Hub v2.0.0",
-    LoadingSubtitle = "by Bdev",
+    Name = "vetrex Hub v1 beta",
+    LoadingTitle = "vetrex Hub v1 beta",
+    LoadingSubtitle = "by vetrex",
     ConfigurationSaving = {
         Enabled = true,
-        FolderName = "BdevHubV2",
-        FileName = "BdevHub"
+        FolderName = "vetrexHub",
+        FileName = "vetrexHub"
     },
     KeySystem = true,
     KeySettings = {
-        Title = "Bdev HUB v2.0.0",
+        Title = "vetrex Hub v1 beta",
         Subtitle = "Ключ система",
-        Note = "Введите ключ чтобы продолжить",
+        Note = "The key can be obtained from this link - https://discord.gg/xSkFSKmAgp",
         FileName = "Key",
         SaveKey = true,
-        Key = {"BdevV2"},
+        Key = {"vetrex"},
     },
     DisableRayfieldPrompts = false,
 })
@@ -37,13 +37,13 @@ local v = w:CreateTab("Visual", 4483362458)
 
 MainTab:CreateParagraph({
     Title = "Bdev Hub v2.0.0",
-    Content = "Добро пожаловать в Bdev Hub!\n\nРазработчик: Bdev, Скриптер: Vorqix\nВерсия: 2.0.0\n\nЧто нового:\n• Оптимизирован код для лучшей производительности\n\nДобавлено:\n• Плавность наводки\n• Свечение\n• Индикатор видимости\n• Счетчик врагов\n• Рентген\n• Показать FPS\n• ТП ходьба\n• Буст FPS\n• Растяг 4:3\n• Смена FOV\n• Радужный персонаж\n• Яркость\n• Отключить туман\n\nУлучшено:\n• Полоска здоровья - теперь под полоской видно кол-во здоровья игрока"
+    Content = "Добро пожаловать в vetrex Hub!\n\nРазработчик: vetrex \nВерсия: v1 beta\n\nЧто нового:\n• Оптимизирован код для лучшей производительности\n\nДобавлено:\n• Плавность наводки\n• Свечение\n• Индикатор видимости\n• Счетчик врагов\n• Рентген\n• Показать FPS\n• ТП ходьба\n• Буст FPS\n• Растяг 4:3\n• Смена FOV\n• Радужный персонаж\n• Яркость\n• Отключить туман\n\nУлучшено:\n• Полоска здоровья - теперь под полоской видно кол-во здоровья игрока"
 })
 
 MainTab:CreateButton({
-    Name = "📢 Наш Telegram канал",
+    Name = "📢 Наш Discord канал",
     Callback = function()
-        local telegramLink = "https://t.me/BdevHub"
+        local telegramLink = "https://discord.gg/xSkFSKmAgp"
         
         local success, errorMessage = pcall(function()
             setclipboard(telegramLink)
@@ -51,15 +51,15 @@ MainTab:CreateButton({
         
         if success then
             rayfield:Notify({
-                Title = "Telegram",
+                Title = "Discord",
                 Content = "Ссылка скопирована в буфер обмена!\nВставьте её в браузер.",
                 Duration = 5,
                 Image = 4483362458,
             })
         else
             rayfield:Notify({
-                Title = "Telegram",
-                Content = "Не удалось скопировать ссылку.\nСсылка: " .. telegramLink,
+                Title = "Discord",
+                Content = "Не удалось скопировать ссылку.\nСсылка: " .. DiscordLink,
                 Duration = 10,
                 Image = 4483362458,
             })
@@ -79,7 +79,7 @@ local function createWM()
     
     if Drawing then
         wm = Drawing.new("Text")
-        wm.Text = "t.me/Bdev Hub"
+        wm.Text = "https://discord.gg/xSkFSKmAgp"
         wm.Size = 18
         wm.Center = true
         wm.Outline = false
@@ -2070,4 +2070,4 @@ if ge then
     updateAllGlowESP()
 end
 
-print("Bdev Hub v2.0.0 loaded!")
+print("vetrex Hub v1 beta loaded")
