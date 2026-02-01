@@ -20,11 +20,6 @@ local Window = WindUI:CreateWindow({
 })
 
 local MainTab = Window:Tab({ Title = "Main" })
-local Tab = Window:Tab({
-    Title = "main",
-    Icon = "bird", -- optional
-    Locked = false,
-})
 local AimTab = Window:Tab({ Title = "Aim" })
 local ESPTab = Window:Tab({ Title = "ESP" })
 local MiscTab = Window:Tab({ Title = "Misc" })
@@ -75,7 +70,7 @@ local function createWM()
     
     if Drawing then
         wm = Drawing.new("Text")
-        wm.Text = "https://discord.gg/xSkFSKmAgp"
+        wm.Text = "︎ ︎"
         wm.Size = 18
         wm.Center = true
         wm.Outline = false
@@ -2113,4 +2108,5 @@ if ge then
 end
 
 print("vetrex Hub v1 beta loaded")
+
 
