@@ -20,6 +20,11 @@ local Window = WindUI:CreateWindow({
 })
 
 local MainTab = Window:Tab({ Title = "Main" })
+local Tab = Window:Tab({
+    Title = "main",
+    Icon = "bird", -- optional
+    Locked = false,
+})
 local AimTab = Window:Tab({ Title = "Aim" })
 local ESPTab = Window:Tab({ Title = "ESP" })
 local MiscTab = Window:Tab({ Title = "Misc" })
@@ -2108,3 +2113,4 @@ if ge then
 end
 
 print("vetrex Hub v1 beta loaded")
+
